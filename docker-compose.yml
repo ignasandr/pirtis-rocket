@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+    client:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        command: cargo run --release
+        # ports:
+        # - '8000:8000'
+        expose:
+        - '8000'
+        restart: always
+        environment: 
+            VIRTUAL_HOST: audiopirtis.lt, www.audiopirtis.lt
+
+networks:
+  default:
+    external:
+      name: nginx-proxy

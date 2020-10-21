@@ -1,0 +1,135 @@
+html, body {
+}
+
+body {
+	background-color: #141414;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+#track1 {
+	grid-column-start: 2;
+	grid-column-end: span 1;
+	grid-row-start: 5;
+	grid-row-end: span 4;
+}
+
+#track2 {
+	grid-column-start: 3;
+	grid-column-end: span 1;
+	grid-row-start: 8;
+	grid-row-end: span 4;
+}
+
+#track3 {
+	grid-column-start: 4;
+	grid-column-end: span 1;
+	grid-row-start: 4;
+	grid-row-end: span 4;
+}
+
+#track4 {
+	grid-column-start: 5;
+	grid-column-end: span 1;
+	grid-row-start: 6;
+	grid-row-end: span 4;
+}
+
+#track5 {
+	grid-column-start: 6;
+	grid-column-end: span 1;
+	grid-row-start: 3;
+	grid-row-end: span 4;
+}
+
+#track6 {
+	grid-column-start: 7;
+	grid-column-end: span 1;
+	grid-row-start: 7;
+	grid-row-end: span 4;
+}
+
+@media (max-width: 1280px) {
+  .tracks {
+    gap: 15px;
+  }
+  #track1 {
+    grid-row-start: 4;
+  }
+
+  #track2 {
+    grid-row-start: 7;
+  }
+
+  #track3 {
+    grid-row-start: 3;
+  }
+
+  #track4 {
+    grid-row-start: 5;
+  }
+
+  #track5 {
+    grid-row-start: 2;
+  }
+
+  #track6 {
+    grid-row-start: 6;
+  }
+}
+
+@media (max-width: 576px) { 
+.tracks {
+  grid-template-columns: 3fr 1fr 4fr 1fr 3fr 1fr 4fr 1fr 3fr; 
+  gap: 0px;
+}
+
+#track1 {
+  grid-column-start: 6;
+  grid-column-end: span 2;
+  grid-row-start: 1;
+  grid-row-end: span 3;
+  z-index: 6;
+}
+
+#track2 {
+  grid-column-start: 3;
+  grid-column-end: span 2;
+  grid-row-start: 1;
+  grid-row-end: span 4;
+  z-index: 5;
+}
+
+#track3 {
+  grid-column-start: 5;
+  grid-column-end: span 2;
+  grid-row-start: 4;
+  grid-row-end: span 4;
+  z-index: 4;
+}
+
+#track4 {
+  grid-column-start: 2;
+  grid-column-end: span 2;
+  grid-row-start: 5;
+  grid-row-end: span 4;
+  z-index: 3;
+}
+
+#track5 {
+  grid-column-start: 6;
+  grid-column-end: span 2;
+  grid-row-start: 8;
+  grid-row-end: span 4;
+  z-index: 2;
+}
+
+#track6 {
+  grid-column-start: 3;
+  grid-column-end: span 2;
+  grid-row-start: 8;
+  grid-row-end: span 4;
+  z-index: 1;
+}
+}
